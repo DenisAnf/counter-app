@@ -1,13 +1,24 @@
-let counterBtn = document.querySelector('.js-btn');
-let counterValue = document.querySelector('.js-value');
-
+const daysValue = document.querySelector('[data-find="counterValue"]');
+const btnAddOneDays = document.querySelector('[data-btn="addOneDays"]');
+const btnAddTwoDays = document.querySelector('[data-btn="addTwoDays"]');
+const btnResetDays = document.querySelector('[data-btn="resetDays"]');
 
 const COUNTER_INIITIAL_VALUE = 0;
-let counterDay = 0;
+let counterDay = COUNTER_INIITIAL_VALUE;
 
-counterBtn.addEventListener('click', function () {
-	day = day + 1;
-	counterValue.innerText = day;
+daysValue.innerText = counterDay
+
+btnAddOneDays.addEventListener('click', function () {
+	counterDay = counterDay + parseInt(btnAddOneDays.dataset.day);
+	daysValue.innerText = counterDay;
 });
 
+btnAddTwoDays.addEventListener('click', function () {
+	counterDay = counterDay + parseInt(btnAddTwoDays.dataset.day);
+	daysValue.innerText = counterDay;
+});
 
+btnResetDays.addEventListener('click', function () {
+	counterDay = COUNTER_INIITIAL_VALUE;
+	daysValue.innerText = counterDay;
+});

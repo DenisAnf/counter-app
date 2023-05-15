@@ -10,7 +10,7 @@
 	<meta name="Address" content="Санкт-Петербург">
 
 	<link rel="stylesheet" href="styles/style.css">
-	<title>Занятия на неделе</title>
+	<title>Счетчик тренировок</title>
 	<link rel="shortcut icon" href="resourses/img/icon/favicon.ico"/>
 </head>
 <body>
@@ -19,10 +19,28 @@
 	<main class="page">
 		<section class="counter">
 			<div class="counter__wrapper">
-				<p class="js-value counter__value">0</p>
-				<button type="button" class="js-btn-addOne counter__button-add">+1 день</button>
-				<button type="button" class="js-btn-addDouble counter__button-add">+2 деня</button>
-				<button type="button" class="js-btn-reset counter__button-reset">Сбросить</button>
+
+				<p 
+				data-find="counterValue" 
+				class="counter__value"></p>
+
+				<button 
+				type="button" 
+				data-btn="addOneDays" 
+				data-day="1" 
+				class="counter__button-add">+1 тренировка</button>
+
+				<button 
+				type="button" 
+				data-btn="addTwoDays" 
+				data-day="2" 
+				class="counter__button-add">+2 тренировки</button>
+
+				<button 
+				type="button" 
+				data-btn="resetDays" 
+				class="counter__button-reset">Сбросить</button>
+
 			</div>
 		</section>
 	</main>
