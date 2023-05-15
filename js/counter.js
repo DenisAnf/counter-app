@@ -3,8 +3,8 @@ const btnAddOneDays = document.querySelector('[data-btn="addOneDays"]');
 const btnAddTwoDays = document.querySelector('[data-btn="addTwoDays"]');
 const btnResetDays = document.querySelector('[data-btn="resetDays"]');
 
-const COUNTER_INIITIAL_VALUE = 0;
-let counterDay = COUNTER_INIITIAL_VALUE;
+const DAYS_INIITIAL_VALUE = 0;
+let counterDay = DAYS_INIITIAL_VALUE;
 
 daysValue.innerText = counterDay
 
@@ -19,6 +19,6 @@ btnAddTwoDays.addEventListener('click', function () {
 });
 
 btnResetDays.addEventListener('click', function () {
-	counterDay = COUNTER_INIITIAL_VALUE;
+	counterDay = DAYS_INIITIAL_VALUE;
 	daysValue.innerText = counterDay;
 });
