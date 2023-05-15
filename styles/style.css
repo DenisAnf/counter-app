@@ -1,16 +1,172 @@
-@import "nullstyle.css";
-@import "main.css";
-@import "header.css";
-@import "menu.css";
-@import "burger.css";
-@import "footer.css";
-@import "intro.css";
-@import "about.css";
-@import "projects.css";
-@import "services.css";
-@import "rewiews.css";
-@import "gallery.css";
-@import "contacts.css";
-@import "popup.css";
-@import "order.css";
-@import "input.css";
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Manrope:700);
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  min-width: 320px;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: "Manrope", sans-serif;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+* li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+/*--------------------*/
+body {
+  width: 100%;
+  color: #121212;
+  background-color: #FFFFFF;
+  font-family: "Manrope", sans-serif;
+}
+
+.body__fixed {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1150px;
+  padding: 0;
+  margin: 0 auto;
+}
+@media (max-width: 1199px) {
+  .container {
+    padding: 0 17px 0 15px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    padding: 0 12px 0 13px;
+  }
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+a,
+li,
+h1,
+h2,
+h3,
+img,
+div,
+span,
+p {
+  letter-spacing: -0.03em;
+}
+
+.title {
+  margin-bottom: 30px;
+  padding-top: 150px;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+@media (max-width: 1199px) {
+  .title {
+    padding-top: 120px;
+  }
+}
+@media (max-width: 767px) {
+  .title {
+    margin-bottom: 20px;
+    padding-top: 80px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  margin: auto 0;
+  background: #AD1818;
+  border: 1px solid #AD1818;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 151px;
+  color: #FFFFFF;
+}
+@media (max-width: 767px) {
+  .btn {
+    border-radius: 3.8px;
+    font-size: 22px;
+    line-height: 98px;
+  }
+}

@@ -1,24 +1,13 @@
-const POPUP_OPENED_CLASSNAME = 'popup__open';
-const BODY_FIXED_CLASSNAME = 'body__fixed';
+let counterBtn = document.querySelector('.js-btn');
+let counterValue = document.querySelector('.js-value');
 
-const bodyNode = document.querySelector('body');
-const popupNode = document.querySelector('.js-popup');
-const btnOpenNode = document.querySelector('.js-btn');
-const popupContentNode = document.querySelector('.js-popup__content')
-const btnCloseNode = document.querySelector('.js-popup__close-btn');
 
-btnOpenNode.addEventListener('click', togglePopup);
-btnCloseNode.addEventListener('click', togglePopup);
+const COUNTER_INIITIAL_VALUE = 0;
+let counterDay = 0;
 
-popupNode.addEventListener('click', (event) => {
-    const isClickOutsideContent = !event.composedPath().includes(popupContentNode)
+counterBtn.addEventListener('click', function () {
+	day = day + 1;
+	counterValue.innerText = day;
+});
 
-    if (isClickOutsideContent) {
-        togglePopup();
-    }
-})
 
-function togglePopup() {
-    popupNode.classList.toggle(POPUP_OPENED_CLASSNAME);
-    bodyNode.classList.toggle(BODY_FIXED_CLASSNAME);
-}
