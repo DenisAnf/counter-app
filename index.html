@@ -1,50 +1,55 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<meta name="Author" content="Denis A">
-	<meta name="Copyright" content="Denis A">
-	<meta name="Address" content="Санкт-Петербург">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<link rel="stylesheet" href="styles/style.css">
-	<title>Счетчик тренировок</title>
-	<link rel="shortcut icon" href="resourses/img/icon/favicon.ico"/>
-</head>
-<body>
-	<header class="header"></header>
+    <meta name="Author" content="Denis A" />
+    <meta name="Copyright" content="Denis A" />
+    <meta name="Address" content="Санкт-Петербург" />
 
-	<main class="page">
-		<section class="counter">
-			
-			<p 
-			data-find="counterValue" 
-			class="counter__value"></p>
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Счетчик тренировок</title>
+    <link rel="shortcut icon" href="resourses/img/icon/favicon.ico" />
+  </head>
+  <body>
+    <header class="header"></header>
 
-			<button 
-			type="button" 
-			data-btn="addOneDays" 
-			data-day="1" 
-			class="counter__button-add">+1 день тренировок</button>
+    <main class="page">
+      <section class="counter">
+        <p data-find="counterValue" class="counter__value"></p>
 
-			<button 
-			type="button" 
-			data-btn="addTwoDays" 
-			data-day="2" 
-			class="counter__button-add">+2 дня тренировки</button>
+        <button
+          type="button"
+          data-btn="addOneDays"
+          data-day="1"
+          class="counter__button-add"
+        >
+          +1 день тренировок
+        </button>
 
-			<button 
-			type="button" 
-			data-btn="resetDays" 
-			class="counter__button-reset">Сбросить</button>
+        <button
+          type="button"
+          data-btn="addTwoDays"
+          data-day="2"
+          class="counter__button-add"
+        >
+          +2 дня тренировки
+        </button>
 
-		</section>
-	</main>
+        <button
+          type="button"
+          data-btn="resetDays"
+          class="counter__button-reset"
+        >
+          Сбросить
+        </button>
+      </section>
+    </main>
 
-	<footer class="footer"></footer>
-	
-	<script src="js/counter.js"></script>
-</body>
+    <footer class="footer"></footer>
+
+    <script src="js/counter.js"></script>
+  </body>
 </html>
