@@ -5,7 +5,6 @@ const btnResetDays = document.querySelector('[data-btn="resetDays"]');
 
 const DAYS_INIITIAL_VALUE = 0;
 let counterDay = DAYS_INIITIAL_VALUE;
-
 daysValue.innerText = counterDay;
 
 btnAddOneDays.addEventListener("click", function () {
